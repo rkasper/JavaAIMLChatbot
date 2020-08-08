@@ -8,13 +8,11 @@ import java.io.InputStreamReader;
 public class Chatbot {
     public static void main(String[] args) throws IOException {
         System.out.println(greeting());
-        String input;
-        BufferedReader reader =
-                new BufferedReader(new InputStreamReader(System.in));
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         //noinspection InfiniteLoopStatement
         while (true) {
             System.out.print("So now what? ");
-            input = reader.readLine();
+            String input = reader.readLine();
             System.out.println(respond(input));
         }
     }
