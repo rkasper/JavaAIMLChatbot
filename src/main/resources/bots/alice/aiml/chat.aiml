@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+    <category>
+        <pattern>hello</pattern>
+        <template>
+            Hello, my friend!
+        </template>
+    </category>
+    <category>
+        <pattern>hi</pattern>
+        <template>
+            Well hello there!
+        </template>
+    </category>
+    <category>
+        <pattern>I want *</pattern>
+        <template>
+            Hmmm, I think you'll have to take care of that yourself - I'm just a chatbot.
+        </template>
+    </category>
+    <category>
+        <pattern>*</pattern>
+        <template>
+            Sorry, I don't understand. Will you try again?
+        </template>
+    </category>
+</aiml>
