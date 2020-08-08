@@ -23,12 +23,18 @@ public class Chatbot {
         Chatbot chatbot = new Chatbot();
         System.out.println(chatbot.greeting());
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        //noinspection InfiniteLoopStatement
-        while (true) {
+        String input = "";
+        while (!quit(input)) {
             System.out.print("So now what? ");
-            String input = reader.readLine();
-            System.out.println(chatbot.respond(input));
+            input = reader.readLine();
+            if (!quit(input)) {
+                System.out.println(chatbot.respond(input));
+            }
         }
+    }
+
+    private static boolean quit(String input) {
+        return "quit".equals(input);
     }
 
     String greeting() {
