@@ -40,13 +40,17 @@ class ChatbotTests {
 
     @Test
     void iWantSomething() {
-        assertEquals("Hmmm, I think you'll have to take care of that yourself - I'm just a chatbot.", chatbot.respond("I want a cup of tea"));
-        assertEquals("Hmmm, I think you'll have to take care of that yourself - I'm just a chatbot.", chatbot.respond("I want a cup of tea."));
-        assertEquals("Hmmm, I think you'll have to take care of that yourself - I'm just a chatbot.", chatbot.respond("I want a lobster roll and some ice cream."));
+        assertEquals("Hmmm, I think you'll have to take care of that yourself - I'm just a chatbot.",
+                chatbot.respond("I want a cup of tea"));
+        assertEquals("Hmmm, I think you'll have to take care of that yourself - I'm just a chatbot.",
+                chatbot.respond("I want a cup of tea."));
+        assertEquals("Hmmm, I think you'll have to take care of that yourself - I'm just a chatbot.",
+                chatbot.respond("I want a lobster roll and some ice cream."));
     }
 
     @Test
     void garbageIn() {
-        assertEquals("Sorry, I don't understand. Will you try again?", chatbot.respond("random junk asunthaoeusntoehu"));
+        assertEquals("Sorry, I don't understand. Will you try again?",
+                chatbot.respond("random junk asunthaoeusntoehu"));
     }
 }
