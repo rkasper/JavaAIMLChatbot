@@ -37,14 +37,5 @@ public class Chatbot {
 
     String respond(String input) {
         return chat.multisentenceRespond(input);
-//        if ("Hi".equals(input) || "hi".equals(input)) {
-//            return "Well hello there!";
-//        } else if ("Hello".equals(input) || "hello".equals(input)) {
-//            return "Hello, my friend!";
-//        } else if ("I want a cup of tea".equals(input)) {
-//            return "Hmmm, I think you'll have to take care of that yourself - I'm just a chatbot.";
-//        }
-//        // else
-//        return "Sorry, I don't understand. Will you try again?";
     }
 }
